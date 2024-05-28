@@ -4,41 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuegosJP - Página Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <h1>JuegosJP</h1><a href="index.html" style="color: white;">Inicio</a>
+<body class="bg-info">
+    <header class="py-3 bg-light text-center">
+        <h1>JuegosJP</h1>
+        <a href="index.html" class="text-black">Inicio</a>
     </header>
-    <main>
-        
-        <section>
-            <h2>Categoria Familiares</h2>
-            <div class="categorias">
-                <div class="categoria">
-                    <a href="html/familiareshtml/grancapital_descripcion.html">
-                        <img src="img/familiares/granCapital.png" alt="Gran Capital">
-                        <h3>Gran Capital</h3>
+    <main class="my-5">
+        <section class="container-fluid mb-5">
+            <div class="text-center">
+                <h2>Categoria Familiares</h2>
+                <p>Descubre una amplia variedad de juegos de mesa familiares para todas las edades y gustos.</p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="html/familiareshtml/grancapital_descripcion.html" class="text-decoration-none">
+                        <img src="img/familiares/granCapital.png" class="img-fluid" alt="Gran Capital">
+                        <h3 class="mt-2">Gran Capital</h3>
                     </a>
                 </div>
-                <div class="categoria">
-                    <a href="html/familiareshtml/gransantiago_descripcion.html">
-                        <img src="img/familiares/granSantiago.png" alt="Gran Santiago">
-                        <h3>Gran Santiago</h3>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="html/familiareshtml/gransantiago_descripcion.html" class="text-decoration-none">
+                        <img src="img/familiares/granSantiago.png" class="img-fluid" alt="Gran Santiago">
+                        <h3 class="mt-2">Gran Santiago</h3>
                     </a>
                 </div>
-                <div class="categoria">
-                    <a href="html/familiareshtml/ludo_descripcion.html">
-                        <img src="img/familiares/ludo.png" alt="Ludo">
-                        <h3>Ludo</h3>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="html/familiareshtml/ludo_descripcion.html" class="text-decoration-none">
+                        <img src="img/familiares/ludo.png" class="img-fluid" alt="Ludo">
+                        <h3 class="mt-2">Ludo</h3>
                     </a>
                 </div>
-                
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 JuegosJP. Todos los derechos reservados.</p>
+    <footer class="py-3 bg-light text-center fixed-bottom">
+        <div class="container">
+            <p>&copy; 2024 JuegosJP. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>

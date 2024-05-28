@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JuegosJP - Página Principal</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>JuegosJP</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Bienvenidos a JuegosJP</h2>
-            <p>En JuegosJP encontrarás una amplia variedad de juegos de mesa para todas las edades y gustos. Explora nuestras categorías y descubre juegos emocionantes y divertidos que serán el centro de atención en tus reuniones y momentos de ocio.</p>
-        </section>
-        <section>
-            <h2>Categorías</h2>
-            <div class="categorias">
-                <div class="categoria">
-                    <a href="cartas.html">
-                        <img src="img/Cat1.png" alt="Cartas">
-                        <h3>Cartas</h3>
-                    </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css">
+      
+    </head>
+   
+    <body class="bg-info">
+       
+        <div class="py-3 bg-light text-center">
+            <h1>JuegosJP</h1>
+        </header>
+        <main class="my-5">
+            <section class="mb-5">
+                <div class="text-center">
+                    <h2 class="tituloBienvenida">Bienvenidos a JuegosJP</h2>
+                    <!--Este titulo se esta pasando por el DOM-->
+                    <p id="tituloIndex"></p>
                 </div>
-                <div class="categoria">
-                    <a href="familiares.html">
-                        <img src="img/Cat2.png" alt="Familiares">
-                        <h3>Familiares</h3>
-                    </a>
+            </section>
+            <section>
+                <h2 class="text-center mb-4">Categorías</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <a href="cartas.html" class="text-decoration-none">
+                            <img src="img/Cat1.png" class="img-fluid" alt="Cartas">
+                            <h3 class="mt-2">Cartas</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <a href="familiares.html" class="text-decoration-none">
+                            <img src="img/Cat2.png" class="img-fluid" alt="Familiares">
+                            <h3 class="mt-2">Familiares</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <a href="niños.html" class="text-decoration-none">
+                            <img src="img/Cat3.png" class="img-fluid" alt="Niños">
+                            <h3 class="mt-2">Niños</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <a href="extra_adulto.html" class="text-decoration-none">
+                            <img src="img/Cat4.png" class="img-fluid" alt="Estrategia Adulto">
+                            <h3 class="mt-2">Estrategia Adulto</h3>
+                        </a>
+                    </div>
                 </div>
-                <div class="categoria">
-                    <a href="niños.html">
-                        <img src="img/Cat3.png" alt="Niños">
-                        <h3>Niños</h3>
-                    </a>
-                </div>
-                <div class="categoria">
-                    <a href="extra_adulto.html">
-                        <img src="img/Cat4.png" alt="Extrategia Adulto">
-                        <h3>Extrategia Adulto</h3>
-                    </a>
-                </div>
+            </section>
+        </main>
+        <footer class="py-3 bg-light text-center fixed-bottom">
+            <div class="container">
+                <p>&copy; 2024 JuegosJP. Todos los derechos reservados.</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 JuegosJP. Todos los derechos reservados.</p>
-    </footer>
+        </footer>
+    </div>
+    <script src="js.js"></script>
 </body>
 </html>

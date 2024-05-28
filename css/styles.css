@@ -1,57 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
 
-main {
-    flex: 1;
-    padding: 2rem;
-}
 
-.categorias {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.categoria {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
-    max-width: 220px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: white;
-    overflow: hidden; /* Ensures that content doesn't overflow the div */
-    border-radius: 10px; /* Rounds the corners of the category containers */
-}
-
-.categoria img {
+.img-fluid {
     width: 100%;
     height: 200px; /* Ensures uniform height for all images */
     object-fit: cover; /* Ensures images are scaled to cover the given dimension */
     border-radius: 10px 10px 0 0; /* Rounds the top corners of the images */
 }
 
-.categoria h3 {
-    margin: 0;
-    padding: 0.5rem 0;
-    background-color: #333;
-    color: white;
-    border-radius: 0 0 10px 10px; /* Rounds the bottom corners of the heading */
+.py-3{
+    color: black;
 }
+
+
 
 footer {
     background-color: #333;
